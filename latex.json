@@ -1,0 +1,114 @@
+{
+	"begin": {
+		"prefix": "begin",
+		"body": [
+			"\\begin{$1}",
+			"$0", 
+			"\\end{${1}}"
+		],
+		"description": "\\begin{}…\\end{}",
+	},
+
+	"definition": {
+		"prefix": "def",
+		"body": [
+		  "\\begin{definition}[$0]",
+		  "\\end{definition}"
+		],
+		"description": "definition"
+	  },
+
+	"enumeration": {
+		"prefix": "enu",
+		"body": [
+		  "\\begin{enumerate}",
+		  "  \\item",
+		  "\\end{enumerate}"
+		],
+		"description": "enumeration"
+	},
+
+	"equation": {
+		"prefix": "eq",
+		"body": [
+			"\\begin{equation}",
+			"$0",
+			"\\end{equation}"
+		],
+		"description": "Equation",
+	},
+
+	"fraction": {
+			"prefix": "frac",
+			"body": [
+			  "\\frac{}{}"
+			],
+			"description": "fraction"
+	},
+
+	"greater than": {
+		"prefix": "gtr",
+		"body": [
+		  "$>$"
+		],
+		"description": "greater than"
+	},
+
+	"itemize": {
+		"prefix": "ite",
+		"body": [
+		  "\\begin{itemize}",
+		  "  \\item",
+		  "\\end{itemize}"
+		],
+		"description": "itemize"
+	},
+
+	"less than": {
+		"prefix": "les",
+		"body": [
+		  "$<$"
+		],
+		"description": "less than"
+	},
+
+	"math mode":{
+		"prefix": "usd",
+		"body": "\\$ $0 \\$",
+		"description": "math mode"
+	},	
+
+	"small caps": {
+			"prefix": "sc",
+			"body": [
+				"\\textsc{$1}"
+			],
+			"description": "adds small caps"
+	},
+			
+	"signature": {
+				"prefix": "sign",
+				"body": [
+				  "Regards,",
+				  "Anjali"
+				],
+				"description": "signature"
+	},
+	
+	"summation": {
+			"prefix": "sum",
+			"body": [
+			  "\\sum_{}^{}"
+			],
+			"description": "summation"
+	},
+
+	"theorem": {
+			"prefix": "thm",
+			"body": [
+			  "\\begin{theorem}",
+			  "\\end{theorem}"
+			],
+			"description": "theorem"
+	}
+}
