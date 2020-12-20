@@ -31,9 +31,9 @@
 	"equation": {
 		"prefix": "eq",
 		"body": [
-			"\\begin{equation}",
+			"\\begin{equation*}",
 			"$0",
-			"\\end{equation}"
+			"\\end{equation*}"
 		],
 		"description": "Equation",
 	},
@@ -78,6 +78,14 @@
 		"description": "math mode"
 	},	
 
+	"section": {
+		"prefix": "sec",
+		"body": [
+		  "\\section{$0}"
+		],
+		"description": "section"
+	},
+
 	"small caps": {
 			"prefix": "sc",
 			"body": [
@@ -98,7 +106,7 @@
 	"summation": {
 			"prefix": "sum",
 			"body": [
-			  "\\sum_{}^{}"
+			  "\\sum_{$1}^{$0}"
 			],
 			"description": "summation"
 	},
