@@ -1,4 +1,14 @@
 {
+	"align": {
+		"prefix": "ali",
+		"body": [
+		  "\\begin{align*}",
+		  "$0",
+		  "\\end{align*}"
+		],
+		"description": "align"
+	},
+
 	"begin": {
 		"prefix": "begin",
 		"body": [
@@ -7,6 +17,14 @@
 			"\\end{${1}}"
 		],
 		"description": "\\begin{}…\\end{}",
+	},
+
+	"curly braces": {
+		"prefix": "curl",
+		"body": [
+		  "\\{ $0 \\}"
+		],
+		"description": "curly braces"
 	},
 
 	"definition": {
@@ -41,7 +59,7 @@
 	"fraction": {
 			"prefix": "frac",
 			"body": [
-			  "\\frac{}{}"
+			  "\\frac{$1}{$0}"
 			],
 			"description": "fraction"
 	},
@@ -74,7 +92,7 @@
 
 	"math mode":{
 		"prefix": "usd",
-		"body": "\\$ $0 \\$",
+		"body": "\\$ $1 \\$ $0",
 		"description": "math mode"
 	},	
 
@@ -102,6 +120,34 @@
 				],
 				"description": "signature"
 	},
+
+	"split": {
+		"prefix": "spli",
+		"body": [
+		  "\\begin{equation*}",
+		  "\\begin{split}",
+		  "$0",
+		  "\\end{split}",
+		  "\\end{equation*}"
+		],
+		"description": "split"
+	},
+
+	"subscript": {
+		"prefix": "subs",
+		"body": [
+		  "$1_{$0}"
+		],
+		"description": "subscript"
+	},
+
+	"superscript": {
+		"prefix": "sups",
+		"body": [
+		  "$1^{$0}"
+		],
+		"description": "superscript"
+	},
 	
 	"summation": {
 			"prefix": "sum",
@@ -118,5 +164,14 @@
 			  "\\end{theorem}"
 			],
 			"description": "theorem"
+	},
+
+	"x and y": {
+		"prefix": "xy",
+		"body": [
+		  "\\$X\\$ and \\$Y\\$"
+		],
+		"description": "x and y"
 	}
+
 }
