@@ -96,6 +96,14 @@
 		"description": "math mode"
 	},	
 
+	"meanvariance": {
+		"prefix": "mv",
+		"body": [
+		  "mean $ \\mu $ and variance $ \\sigma^{2} $ $0"
+		],
+		"description": "meanvariance"
+	},
+
 	"section": {
 		"prefix": "sec",
 		"body": [
@@ -131,6 +139,14 @@
 		  "\\end{equation*}"
 		],
 		"description": "split"
+	},
+
+	"square": {
+		"prefix": "sq",
+		"body": [
+		  "$1^{2}$0"
+		],
+		"description": "square"
 	},
 
 	"subscript": {
